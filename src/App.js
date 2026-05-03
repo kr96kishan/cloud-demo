@@ -2,9 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const isStudentMode=process.env.REACT_APP_KEY_USE_MODE.toString().toLowerCase() === 'student';
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Faculty portal</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit
