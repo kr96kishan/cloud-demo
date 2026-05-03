@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Faculty portal</h1>
+        <h1>{isStudentMode ? "Student Portal":"Faculty Portal"}</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit
